@@ -1,0 +1,165 @@
+@import "./default";
+
+.wrapper {
+  margin-top: 53px;
+}
+
+.load {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--light-1);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &er {
+    @include loader(56px);
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    color: var(--dark-3);
+  }
+
+  &ed {
+    animation: loaded ease var(--transition) forwards;
+
+    @keyframes loaded {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.nav {
+  padding: 12px 0;
+  border-bottom: 2px solid var(--primary-1);
+  background-color: var(--light-1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--dark-2);
+  }
+
+  &__burger__check {
+    display: none;
+  }
+
+  &__menu {
+    &__body {
+      display: flex;
+    }
+
+    &__item {
+      margin: 0 16px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      color: var(--dark-3);
+      font-weight: 500;
+      transition: color ease 250ms;
+
+      &:hover {
+        color: var(--primary-1);
+      }
+
+      .icon {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: 577px) {
+    .active {
+      color: var(--primary-1);
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__burger {
+      @include burger(32px);
+    }
+
+    &__menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      background-color: var(--primary-1);
+      overflow: hidden;
+      height: 0;
+      transition: height ease var(--transition);
+
+      &Open {
+        height: 228px;
+      }
+
+      &__body {
+        flex-direction: column;
+        padding: 12px 0;
+      }
+
+      &__item {
+        margin: 12px 0;
+      }
+
+      &__link {
+        color: var(--light-1);
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: var(--light-1);
+        }
+
+        .icon {
+          display: inline-block;
+          background: var(--light-1);
+          margin-right: 16px;
+          width: 1.25em;
+          height: 1.25em;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: var(--primary-3);
+  margin-top: 36px;
+
+  &__text {
+    padding: 0.5em 0;
+    text-align: center;
+    color: var(--light-1);
+  }
+}

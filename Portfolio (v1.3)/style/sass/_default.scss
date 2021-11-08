@@ -13,6 +13,31 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --dark-1: #1c1c1c;
+  --dark-2: #2f2f2f;
+  --dark-3: #828282;
+
+  --light-1: #ffffff;
+  --light-2: #f1f1f1;
+  --light-3: #e1e1e1;
+
+  --primary-1: #eebf63;
+  --primary-2: #90c0e8;
+  --primary-3: #6fc2c5;
+  --primary-4: #cd921e;
+  --primary-5: #486074;
+  --primary-6: #386163;
+
+  --radius-1: 10px;
+  --radius-2: 20px;
+  --radius-3: 25px;
+  --radius-4: 30px;
+  --radius-5: 45px;
+
+  --transition: 250ms;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -116,31 +141,6 @@ h4 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.75em;
-}
-
-:root {
-  --dark-1: #1c1c1c;
-  --dark-2: #2f2f2f;
-  --dark-3: #828282;
-
-  --light-1: #ffffff;
-  --light-2: #f1f1f1;
-  --light-3: #e1e1e1;
-
-  --primary-1: #eebf63;
-  --primary-2: #90c0e8;
-  --primary-3: #6fc2c5;
-  --primary-4: #cd921e;
-  --primary-5: #486074;
-  --primary-6: #386163;
-
-  --radius-1: 10px;
-  --radius-2: 20px;
-  --radius-3: 25px;
-  --radius-4: 30px;
-  --radius-5: 45px;
-
-  --transition: 250ms;
 }
 
 .icon {

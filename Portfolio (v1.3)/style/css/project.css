@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --dark-1: #1c1c1c;
+  --dark-2: #2f2f2f;
+  --dark-3: #828282;
+  --light-1: #ffffff;
+  --light-2: #f1f1f1;
+  --light-3: #e1e1e1;
+  --primary-1: #eebf63;
+  --primary-2: #90c0e8;
+  --primary-3: #6fc2c5;
+  --primary-4: #cd921e;
+  --primary-5: #486074;
+  --primary-6: #386163;
+  --radius-1: 10px;
+  --radius-2: 20px;
+  --radius-3: 25px;
+  --radius-4: 30px;
+  --radius-5: 45px;
+  --transition: 250ms;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: var(--dark-2);
+  background: var(--light-1);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.25em;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.25em;
+}
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.5em;
+}
+
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+@media (max-width: 1200px) {
+  h4 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+
+.text-sm {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75em;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -webkit-mask-size: contain !important;
+          mask-size: contain !important;
+  -webkit-mask-position: center !important;
+          mask-position: center !important;
+  -webkit-mask-repeat: no-repeat !important;
+          mask-repeat: no-repeat !important;
+  background: var(--dark-3);
+  -webkit-transition: background ease var(--transition);
+  transition: background ease var(--transition);
+}
+
+.icon-download {
+  -webkit-mask: url("../images/icons/icons-download.svg");
+          mask: url("../images/icons/icons-download.svg");
+}
+
+.icon-instagram {
+  -webkit-mask: url("../images/icons/icons-instagram.svg");
+          mask: url("../images/icons/icons-instagram.svg");
+}
+
+.icon-mail {
+  -webkit-mask: url("../images/icons/icons-mail.svg");
+          mask: url("../images/icons/icons-mail.svg");
+}
+
+.icon-star {
+  -webkit-mask: url("../images/icons/icons-star.svg");
+          mask: url("../images/icons/icons-star.svg");
+}
+
+.icon-star-half {
+  -webkit-mask: url("../images/icons/icons-star-half.svg");
+          mask: url("../images/icons/icons-star-half.svg");
+}
+
+.icon-youtube {
+  -webkit-mask: url("../images/icons/icons-youtube.svg");
+          mask: url("../images/icons/icons-youtube.svg");
+}
+
+.icon-home {
+  -webkit-mask: url("../images/icons/icons-home.svg");
+          mask: url("../images/icons/icons-home.svg");
+}
+
+.icon-user {
+  -webkit-mask: url("../images/icons/icons-user.svg");
+          mask: url("../images/icons/icons-user.svg");
+}
+
+.icon-briefcase {
+  -webkit-mask: url("../images/icons/icons-briefcase.svg");
+          mask: url("../images/icons/icons-briefcase.svg");
+}
+
+.icon-headphone {
+  -webkit-mask: url("../images/icons/icons-headphone.svg");
+          mask: url("../images/icons/icons-headphone.svg");
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 0.75em 1.5em;
+  min-width: 198px;
+  border-radius: var(--radius-1);
+  border: 0.125em solid transparent;
+  -webkit-transition: color ease var(--transition), background ease var(--transition), -webkit-filter ease var(--transition);
+  transition: color ease var(--transition), background ease var(--transition), -webkit-filter ease var(--transition);
+  transition: filter ease var(--transition), color ease var(--transition), background ease var(--transition);
+  transition: filter ease var(--transition), color ease var(--transition), background ease var(--transition), -webkit-filter ease var(--transition);
+}
+
+.btn .icon {
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 0.75em;
+}
+
+.btn:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.btn-filled {
+  color: var(--light-1);
+  background: var(--primary-1);
+  border-color: var(--primary-1);
+}
+
+.btn-filled .icon {
+  background: var(--light-1);
+}
+
+.btn-filled:active {
+  color: var(--dark-3);
+  background: transparent;
+}
+
+.btn-filled:active .icon {
+  background: var(--dark-3);
+}
+
+.btn-outline {
+  color: var(--dark-3);
+  border-color: var(--primary-1);
+}
+
+.btn-outline .icon {
+  background: var(--dark-3);
+}
+
+.btn-outline:active {
+  color: var(--light-1);
+  background: var(--primary-1);
+}
+
+.btn-outline:active .icon {
+  background: var(--light-1);
+}
+/*# sourceMappingURL=project.css.map */
